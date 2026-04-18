@@ -3,7 +3,7 @@ import { useState } from "react"
 function Todoinput({addTodo}) {
     const [input,setInput] = useState("")
 
-    const handleChange = (e) => {
+    const handleChange = () => {
         if(input.trim() !== ""){
             addTodo(input)
             setInput("")
